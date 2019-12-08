@@ -1,0 +1,49 @@
+input, select, textarea
+    color: #384f9b
+    &::placholder
+        color: #384f9b
+.sidebar
+    position: fixed
+    left: 0
+    top: 0
+    width: 30%
+    max-width: 300px
+    height: 100%
+    display: block
+    z-index: 1
+    background-color: #9e9a9a
+    &__head
+        position: relative
+        height: 15%
+        width: 100%
+        font-size: 18px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        align-items: center
+        color: #384f9b
+        &_settings
+            position: relative
+            float: left
+            margin: 0 50px 0 10px
+            font-weight: 600
+        &_save
+            border-radius: 5px
+            border: 2px solid #969292
+            color: #969292
+            background-color: #fff
+            padding: 10px 20px
+        &_exit
+            color: #384f9b
+            margin-left: 10px
+            background: none
+            border: 0
+    &__fields
+        margin-left: 10px
+        &_yellow
+            display: flex
+            flex-direction: column
+        &_pink
+            display: flex
+            flex-direction: column
+    
