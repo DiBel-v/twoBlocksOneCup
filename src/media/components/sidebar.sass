@@ -12,6 +12,7 @@ input, select, textarea
     display: block
     z-index: 1
     background-color: #9e9a9a
+    animation: open-bar 0.25s ease-in-out
     &__head
         position: relative
         height: 15%
@@ -46,4 +47,17 @@ input, select, textarea
         &_pink
             display: flex
             flex-direction: column
-    
+@keyframes open-bar
+    0%
+        transform: translateX(-100%)
+    20%
+        transform: translateX(-80%)
+    40%
+        transform: translateX(-60%)
+    60%
+        transform: translateX(-40%)
+    80%
+        transform: translateX(-20%)
+    100%
+        transform: translateX(0%)
+        
